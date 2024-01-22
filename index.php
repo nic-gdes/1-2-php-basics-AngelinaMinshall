@@ -1,66 +1,73 @@
 <?php
 // Variable
 $string = "I had a dream";
-$integer = 7;
-$float = 3.14
-$boolean = True;
+$integer = 15;
+$float = 3.14;
+$boolean = true;
 
-echo "I " . "love " . "PHP";
+echo "I " . "love " . "PHP" . " ";
 
-$myarray = [1,2,3,4];
+$my_array = [1,2,3,4];
 
- class Car = {
+ class Car {
     public $make;
     function set_make($make) {
-        $this->make = $make;
+        $this ->make = $make;
     }
+      function get_make () {
+         return $this->make;
+      }
+
+
     public $model;
     function set_model($model) {
         $this ->model =$model;
     }
+    function get_model () {
+      return $this->model;
+   }
+
     public $year;
     function set_year($year) {
         $this ->year =$year;
  } 
+      function get_year () {
+         return $this->year;
+      }
 }
 
 
- $lamabo = new Car {
-    $lambo -> set_make("Lambo");
- }
+ $lambo = new Car();
 
- $newYear = new Year {
-    $newYear -> set_year(2001);
- }
-
- $revuelto = new Model {
-    $revuelto -> set_model("Revuelto");
- }
-
- echo("I have a " . $newYear . $lambo . $revuelto ".")
+ $lambo-> set_make('Lambo');
 
 
+ $lambo-> set_year("2001");
+
+
+ $lambo-> set_model("Revuelto");
+ 
+ echo "<br />";
+ echo("I have a " . $lambo -> get_year() . " " . $lambo -> get_make() ." " .  $lambo -> get_model() . ".");
+ 
  // Conditionals
-
- $interger = 15;
-
+ echo "<br />";
  if ($integer >= 10) {
     echo "The statement is fr";
- } else {
-    echo "The statement is cap":
+ }
+ else {
+    echo "The statement is cap";
  }
 
  //Standard
-
- for ($i = 0; $i <count($myArray); $i++){
-    echo $myArray[$i] . "<br>";
+ echo "<br />";
+ for ($i = 0; $i < count($my_array); $i++) {
+    echo $my_array[$i] . "<br />";
  }
-
- //For Each
-foraach ($myArray as $item) {
-    echo $item . "<br>";
+    foreach ($my_array as $item) {
+   echo $item . "<br />";
 } 
-
+ 
 ?>
 
 
